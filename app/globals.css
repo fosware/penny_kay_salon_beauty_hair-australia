@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 60% 96%;
+    --foreground: 23 25% 14%;
+    --card: 45 100% 98%;
+    --card-foreground: 23 25% 14%;
+    --primary: 23 25% 14%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 37 46% 83%;
+    --secondary-foreground: 23 25% 14%;
+    --muted: 37 38% 90%;
+    --muted-foreground: 24 11% 38%;
+    --accent: 12 49% 83%;
+    --accent-foreground: 23 25% 14%;
+    --border: 23 25% 14% / 0.14;
+    --input: 23 25% 14% / 0.16;
+    --ring: 35 38% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory font-sans text-foreground antialiased;
+  }
+
+  body::before {
+    background:
+      linear-gradient(90deg, rgba(185, 148, 94, 0.08) 1px, transparent 1px),
+      linear-gradient(rgba(185, 148, 94, 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+    content: "";
+    inset: 0;
+    mask-image: linear-gradient(to bottom, black, transparent 70%);
+    opacity: 0.35;
+    pointer-events: none;
+    position: fixed;
+    z-index: -1;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply tracking-normal;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply mb-4 text-xs font-extrabold uppercase tracking-[0.18em] text-gold;
+  }
+
+  .section {
+    @apply relative overflow-hidden py-16 md:py-24;
+  }
+
+  .section-alt {
+    @apply bg-white/55;
+  }
+
+  .section::before {
+    background:
+      radial-gradient(circle at 12% 18%, rgba(232, 200, 189, 0.18), transparent 32%),
+      radial-gradient(circle at 86% 22%, rgba(234, 217, 190, 0.22), transparent 34%),
+      linear-gradient(135deg, rgba(255, 253, 248, 0.44), rgba(251, 247, 239, 0));
+    content: "";
+    inset: 0;
+    opacity: 0.72;
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .section-alt::before {
+    background:
+      radial-gradient(circle at 16% 16%, rgba(185, 148, 94, 0.1), transparent 30%),
+      radial-gradient(circle at 88% 18%, rgba(232, 200, 189, 0.18), transparent 34%),
+      linear-gradient(135deg, rgba(255, 253, 248, 0.65), rgba(234, 217, 190, 0.1));
+    opacity: 0.82;
+  }
+}
