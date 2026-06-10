@@ -31,6 +31,7 @@ export function GiftVoucherBanner() {
           src="/images/services/gift-vouchers.png"
           width={900}
           height={535}
+          sizes="(min-width: 1024px) 52vw, 100vw"
           alt="Penny Kay Salon gift voucher graphic"
         />
       </div>

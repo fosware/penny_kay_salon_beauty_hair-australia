@@ -32,7 +32,7 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/80 bg-ivory/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-border/80 bg-ivory/95 lg:bg-ivory/90 lg:backdrop-blur-xl">
       <nav className="container flex min-h-20 items-center justify-between gap-4" aria-label="Main navigation">
         <Link
           href="/"

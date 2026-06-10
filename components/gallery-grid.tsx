@@ -45,6 +45,7 @@ export function GalleryGrid() {
               src={featuredItem.src}
               width={900}
               height={650}
+              sizes="(min-width: 1024px) 55vw, 100vw"
               alt={featuredItem.alt}
             />
             <figcaption className="p-6 md:p-8">
@@ -58,7 +59,14 @@ export function GalleryGrid() {
       <div className="grid gap-5 md:grid-cols-2">
         {remainingItems.map((item) => (
           <Card className="overflow-hidden bg-white/80" key={item.title}>
-            <Image className="aspect-square w-full object-cover" src={item.src} width={630} height={608} alt={item.alt} />
+            <Image
+              className="aspect-square w-full object-cover"
+              src={item.src}
+              width={630}
+              height={608}
+              sizes="(min-width: 768px) 50vw, 100vw"
+              alt={item.alt}
+            />
             <figcaption className="p-4">
               <strong className="block text-espresso">{item.title}</strong>
               <p className="text-sm text-coffee">{item.description}</p>

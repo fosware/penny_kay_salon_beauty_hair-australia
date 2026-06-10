@@ -34,6 +34,7 @@ export default function AboutUsPage() {
               src="/images/team/prue-hope.jpg"
               width={946}
               height={1016}
+              sizes="(min-width: 1024px) 32vw, 58vw"
               alt="Prue Hope owner of Penny Kay Salon"
               priority
             />
@@ -42,6 +43,7 @@ export default function AboutUsPage() {
               src="/images/hero/salon-interior.jpg"
               width={1600}
               height={950}
+              sizes="(min-width: 1024px) 24vw, 42vw"
               alt="Interior of Penny Kay Salon in Springfield"
             />
           </div>

@@ -58,6 +58,7 @@ export default function HomePage() {
               src="/images/team/prue-hope.jpg"
               width={946}
               height={1016}
+              sizes="(min-width: 1024px) 32vw, 58vw"
               alt="Prue Hope owner of Penny Kay Salon"
             />
             <Image
@@ -65,6 +66,7 @@ export default function HomePage() {
               src="/images/gallery/blonde-bob.jpg"
               width={618}
               height={608}
+              sizes="(min-width: 1024px) 24vw, 42vw"
               alt="Blonde bob hair result by Penny Kay Salon"
             />
           </div>

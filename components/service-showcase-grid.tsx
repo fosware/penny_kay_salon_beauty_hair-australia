@@ -32,6 +32,7 @@ export function ServiceShowcaseGrid() {
                 src={service.image}
                 width={900}
                 height={900}
+                sizes="(min-width: 768px) 50vw, 100vw"
                 alt={service.alt}
               />
               <div className="p-5">
@@ -64,6 +65,7 @@ export function ServiceShowcaseGrid() {
                     src={service.image}
                     width={900}
                     height={900}
+                    sizes="(min-width: 1024px) 24vw, (min-width: 640px) 42vw, 100vw"
                     alt={service.alt}
                   />
                   <div className="flex h-full flex-col p-5">

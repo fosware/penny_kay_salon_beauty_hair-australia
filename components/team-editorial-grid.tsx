@@ -21,6 +21,7 @@ export function TeamEditorialGrid({ showTeamLink = true }: TeamEditorialGridProp
             src={owner.image}
             width={946}
             height={1016}
+            sizes="(min-width: 1024px) 40vw, 100vw"
             alt={owner.alt}
           />
           <div className="p-6 md:p-8">
@@ -39,7 +40,14 @@ export function TeamEditorialGrid({ showTeamLink = true }: TeamEditorialGridProp
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {stylists.map((member) => (
           <Card className="overflow-hidden bg-white/80" key={member.name}>
-            <Image className="aspect-[4/4.3] w-full object-cover" src={member.image} width={868} height={966} alt={member.alt} />
+            <Image
+              className="aspect-[4/4.3] w-full object-cover"
+              src={member.image}
+              width={868}
+              height={966}
+              sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+              alt={member.alt}
+            />
             <div className="p-5">
               <span className="text-xs font-extrabold uppercase tracking-[0.18em] text-gold">{member.role}</span>
               <h3 className="mt-3 font-serif text-3xl leading-none text-espresso">{member.name}</h3>

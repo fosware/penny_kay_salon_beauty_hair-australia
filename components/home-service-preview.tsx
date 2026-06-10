@@ -18,6 +18,7 @@ export function HomeServicePreview() {
         src="/images/gallery/colour-melt.jpg"
         width={606}
         height={608}
+        sizes="(min-width: 1024px) 46vw, 100vw"
         alt="Colour melt hair result by Penny Kay Salon"
       />
       <div className="grid gap-4">
